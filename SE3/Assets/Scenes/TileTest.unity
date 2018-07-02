@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571334, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18037513, g: 0.22582603, b: 0.3069767, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,6 +113,35 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &4933622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4933623}
+  m_Layer: 0
+  m_Name: Bunny
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4933623
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 4933622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.168, y: 0, z: -0.274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 735237056}
+  m_Father: {fileID: 466270306}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9744078
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +185,7 @@ Transform:
   - {fileID: 736760416}
   - {fileID: 1589713614}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &14499768
 GameObject:
@@ -218,6 +247,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &14499772
 Rigidbody:
@@ -338,6 +368,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &21922081
 Rigidbody:
@@ -458,6 +489,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &22208776
 Rigidbody:
@@ -578,6 +610,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &23306124
 Rigidbody:
@@ -698,6 +731,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &24784465
 Rigidbody:
@@ -801,7 +835,7 @@ Transform:
   - {fileID: 1043228326}
   - {fileID: 1084000285}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &49661984
 GameObject:
@@ -863,6 +897,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &49661988
 Rigidbody:
@@ -983,6 +1018,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &50761378
 Rigidbody:
@@ -1103,6 +1139,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &51661040
 Rigidbody:
@@ -1223,6 +1260,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &53955353
 Rigidbody:
@@ -1326,7 +1364,7 @@ Transform:
   - {fileID: 705622271}
   - {fileID: 1780801577}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &59622863
 GameObject:
@@ -1388,6 +1426,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &59622867
 Rigidbody:
@@ -1508,6 +1547,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &66097230
 Rigidbody:
@@ -1628,6 +1668,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &72616328
 Rigidbody:
@@ -1748,6 +1789,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &90646254
 Rigidbody:
@@ -1868,6 +1910,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &91097035
 Rigidbody:
@@ -1988,6 +2031,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &99731567
 Rigidbody:
@@ -2108,6 +2152,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &104454075
 Rigidbody:
@@ -2168,87 +2213,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 104454071}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
---- !u!1 &115592075
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 115592079}
-  - component: {fileID: 115592078}
-  - component: {fileID: 115592077}
-  - component: {fileID: 115592076}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &115592076
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 115592075}
-  m_Enabled: 1
---- !u!124 &115592077
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 115592075}
-  m_Enabled: 1
---- !u!20 &115592078
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 115592075}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &115592079
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 115592075}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &121955183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2309,6 +2273,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &121955187
 Rigidbody:
@@ -2429,6 +2394,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &122289312
 Rigidbody:
@@ -2549,6 +2515,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &126864377
 Rigidbody:
@@ -2669,6 +2636,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &132189372
 Rigidbody:
@@ -2789,6 +2757,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &134380077
 Rigidbody:
@@ -2909,6 +2878,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &135934229
 Rigidbody:
@@ -3029,6 +2999,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &137684809
 Rigidbody:
@@ -3089,6 +3060,53 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 137684805}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &159906483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 159906484}
+  - component: {fileID: 159906485}
+  m_Layer: 0
+  m_Name: BoardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &159906484
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159906483}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.352435, y: 0.37572426, z: -10.741421}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1297722668}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &159906485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159906483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f42eca6d30fd5f74b9b901c6e40b4678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingTile: {fileID: 0}
+  player: {fileID: 466270304}
+  dark: {fileID: 2100000, guid: ee2a0eb6a7dc42c4992c6235a6012a72, type: 2}
+  none: {fileID: 2100000, guid: 92b9c028eda89ea4d906f83ac2ad984b, type: 2}
+  first: {fileID: 2100000, guid: f4876af20a4041844b6616b9699a3033, type: 2}
+  second: {fileID: 2100000, guid: 0a5e4d0d93465dc4da5f30d6dd77424b, type: 2}
+  third: {fileID: 2100000, guid: 130b5e858a6079148aee4b5d6e54bb7c, type: 2}
 --- !u!1 &170909050
 GameObject:
   m_ObjectHideFlags: 0
@@ -3149,6 +3167,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &170909054
 Rigidbody:
@@ -3252,7 +3271,7 @@ Transform:
   - {fileID: 1215801884}
   - {fileID: 1761987840}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &191711588
 GameObject:
@@ -3314,6 +3333,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &191711592
 Rigidbody:
@@ -3434,6 +3454,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &208504365
 Rigidbody:
@@ -3554,6 +3575,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &217636182
 Rigidbody:
@@ -3674,6 +3696,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &218175698
 Rigidbody:
@@ -3794,6 +3817,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &218952864
 Rigidbody:
@@ -3914,6 +3938,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &219879717
 Rigidbody:
@@ -4034,6 +4059,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &223717692
 Rigidbody:
@@ -4154,6 +4180,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &223932525
 Rigidbody:
@@ -4274,6 +4301,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &232881899
 Rigidbody:
@@ -4394,6 +4422,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &236969288
 Rigidbody:
@@ -4514,6 +4543,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &248300955
 Rigidbody:
@@ -4634,6 +4664,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &250122832
 Rigidbody:
@@ -4754,6 +4785,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &255748751
 Rigidbody:
@@ -4874,6 +4906,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &270556839
 Rigidbody:
@@ -4994,6 +5027,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &275952814
 Rigidbody:
@@ -5114,6 +5148,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &280603992
 Rigidbody:
@@ -5234,6 +5269,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &285672635
 Rigidbody:
@@ -5354,6 +5390,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &292076696
 Rigidbody:
@@ -5414,6 +5451,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 292076692}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &297573969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1602410839248562, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 297573970}
+  m_Layer: 0
+  m_Name: short-char
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &297573970
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4658803831366948, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 297573969}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.024999887, y: -0.21844552, z: -0.07700002}
+  m_LocalScale: {x: 0.6500002, y: 0.65, z: 0.6500002}
+  m_Children:
+  - {fileID: 305730375}
+  - {fileID: 1647760684}
+  m_Father: {fileID: 1237810258}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &300931059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,6 +5543,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &300931063
 Rigidbody:
@@ -5594,6 +5664,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &302391941
 Rigidbody:
@@ -5714,6 +5785,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &304617233
 Rigidbody:
@@ -5774,6 +5846,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 304617229}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &305730374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1720680933977682, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 305730375}
+  - component: {fileID: 305730377}
+  - component: {fileID: 305730376}
+  m_Layer: 0
+  m_Name: short_char
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &305730375
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4197111999365890, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 305730374}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.036, y: 0.16747907, z: 0.127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 297573970}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &305730376
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23760420068248984, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 305730374}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 0e61e97b0d285ac4a99fd798b493a01d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &305730377
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33617223451798914, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 305730374}
+  m_Mesh: {fileID: 4300000, guid: d59f42f2ec0b0554d84b5395e9a78c4e, type: 3}
 --- !u!1 &316822412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5834,6 +5982,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &316822416
 Rigidbody:
@@ -5954,6 +6103,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &325378931
 Rigidbody:
@@ -6074,6 +6224,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &328366882
 Rigidbody:
@@ -6194,6 +6345,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &332377631
 Rigidbody:
@@ -6314,6 +6466,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &334597412
 Rigidbody:
@@ -6434,6 +6587,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &342138857
 Rigidbody:
@@ -6554,6 +6708,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &346918804
 Rigidbody:
@@ -6614,6 +6769,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 346918800}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &351296418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1112076879969200, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 351296419}
+  m_Layer: 0
+  m_Name: med-char
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &351296419
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4973543723871992, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 351296418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.008000046, y: -0.22644553, z: 0.06400001}
+  m_LocalScale: {x: 0.6500002, y: 0.65, z: 0.6500002}
+  m_Children:
+  - {fileID: 1054361377}
+  - {fileID: 1889528044}
+  m_Father: {fileID: 1019586916}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &360628634
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,6 +6861,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &360628638
 Rigidbody:
@@ -6794,6 +6982,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &363115584
 Rigidbody:
@@ -6914,6 +7103,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &364453270
 Rigidbody:
@@ -7034,6 +7224,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &369909198
 Rigidbody:
@@ -7154,6 +7345,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &375466295
 Rigidbody:
@@ -7274,6 +7466,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &380552607
 Rigidbody:
@@ -7394,6 +7587,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &383717835
 Rigidbody:
@@ -7514,6 +7708,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &384694625
 Rigidbody:
@@ -7634,6 +7829,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &392800249
 Rigidbody:
@@ -7754,6 +7950,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &402514515
 Rigidbody:
@@ -7874,6 +8071,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &422003464
 Rigidbody:
@@ -7994,6 +8192,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &422878679
 Rigidbody:
@@ -8114,6 +8313,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &423873748
 Rigidbody:
@@ -8234,6 +8434,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &427882253
 Rigidbody:
@@ -8354,6 +8555,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &439039075
 Rigidbody:
@@ -8474,6 +8676,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &440113561
 Rigidbody:
@@ -8594,6 +8797,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &449148891
 Rigidbody:
@@ -8714,6 +8918,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &454863364
 Rigidbody:
@@ -8834,6 +9039,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &455859836
 Rigidbody:
@@ -8894,6 +9100,64 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 455859832}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &466270304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1319378233772736, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 466270306}
+  - component: {fileID: 466270305}
+  m_Layer: 0
+  m_Name: PlayerUnit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &466270305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114446277790401428, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466270304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767044b5db4ae774cb68ac6e62793312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tallChar: {fileID: 4933622}
+  medChar: {fileID: 1019586915}
+  shortchar: {fileID: 1237810257}
+  level: {fileID: 159906485}
+  cool: 0.08
+  coolTimer: 0
+  canMove: 0
+  swapCool: 0.1
+  swapTimer: 0
+  canSwap: 0
+  front: 2
+--- !u!4 &466270306
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4840744453471572, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466270304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.429, y: 0.33544552, z: 0.315}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1061007661}
+  - {fileID: 4933623}
+  - {fileID: 1237810258}
+  - {fileID: 1019586916}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473852444
 GameObject:
   m_ObjectHideFlags: 0
@@ -8937,7 +9201,7 @@ Transform:
   - {fileID: 1094304656}
   - {fileID: 170909051}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &476912805
 GameObject:
@@ -8999,6 +9263,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &476912809
 Rigidbody:
@@ -9119,6 +9384,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &478255959
 Rigidbody:
@@ -9239,6 +9505,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &479208339
 Rigidbody:
@@ -9359,6 +9626,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &485688795
 Rigidbody:
@@ -9479,6 +9747,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &494241987
 Rigidbody:
@@ -9599,6 +9868,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &532252143
 Rigidbody:
@@ -9702,7 +9972,7 @@ Transform:
   - {fileID: 380552604}
   - {fileID: 325378928}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &546788602
 GameObject:
@@ -9764,6 +10034,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &546788606
 Rigidbody:
@@ -9884,6 +10155,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &559399244
 Rigidbody:
@@ -9987,7 +10259,7 @@ Transform:
   - {fileID: 1076064391}
   - {fileID: 1083811361}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &583158173
 GameObject:
@@ -10049,6 +10321,7 @@ MonoBehaviour:
   isStartingTile: 1
   currentWeight: 0
   goalRow: {fileID: 1218857759}
+  color: 0
   adjancentTiles: []
 --- !u!54 &583158177
 Rigidbody:
@@ -10169,6 +10442,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &584377191
 Rigidbody:
@@ -10289,6 +10563,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &584870127
 Rigidbody:
@@ -10409,6 +10684,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &587971416
 Rigidbody:
@@ -10529,6 +10805,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &588858120
 Rigidbody:
@@ -10649,6 +10926,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &591791976
 Rigidbody:
@@ -10769,6 +11047,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &602754000
 Rigidbody:
@@ -10889,6 +11168,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &620245326
 Rigidbody:
@@ -11009,6 +11289,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &621487420
 Rigidbody:
@@ -11129,6 +11410,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &621897408
 Rigidbody:
@@ -11249,6 +11531,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &622602745
 Rigidbody:
@@ -11369,6 +11652,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &623829845
 Rigidbody:
@@ -11489,6 +11773,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &624738208
 Rigidbody:
@@ -11609,6 +11894,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &627426911
 Rigidbody:
@@ -11729,6 +12015,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &627849267
 Rigidbody:
@@ -11849,6 +12136,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &640397669
 Rigidbody:
@@ -11969,6 +12257,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &648352437
 Rigidbody:
@@ -12089,6 +12378,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &653601775
 Rigidbody:
@@ -12209,6 +12499,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &656332457
 Rigidbody:
@@ -12329,6 +12620,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &664976633
 Rigidbody:
@@ -12449,6 +12741,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &675339381
 Rigidbody:
@@ -12569,6 +12862,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &702367837
 Rigidbody:
@@ -12689,6 +12983,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &703656955
 Rigidbody:
@@ -12809,6 +13104,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &705622274
 Rigidbody:
@@ -12929,6 +13225,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &708250854
 Rigidbody:
@@ -13049,6 +13346,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &713585161
 Rigidbody:
@@ -13169,6 +13467,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &720439845
 Rigidbody:
@@ -13289,6 +13588,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &725797672
 Rigidbody:
@@ -13409,6 +13709,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &731520651
 Rigidbody:
@@ -13469,6 +13770,38 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 731520647}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &735237055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1687072980895778, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 735237056}
+  m_Layer: 0
+  m_Name: char-tall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &735237056
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4301537494993244, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735237055}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.03942372, y: 0.037614465, z: -0.26938242}
+  m_LocalScale: {x: 0.6500002, y: 0.65, z: 0.6500002}
+  m_Children:
+  - {fileID: 820694891}
+  - {fileID: 1788035678}
+  m_Father: {fileID: 4933623}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &736760415
 GameObject:
   m_ObjectHideFlags: 0
@@ -13529,6 +13862,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &736760419
 Rigidbody:
@@ -13649,6 +13983,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &740198329
 Rigidbody:
@@ -13769,6 +14104,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &748534592
 Rigidbody:
@@ -13889,6 +14225,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &750584388
 Rigidbody:
@@ -14009,6 +14346,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &751880966
 Rigidbody:
@@ -14129,6 +14467,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &753708416
 Rigidbody:
@@ -14249,6 +14588,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &753938101
 Rigidbody:
@@ -14369,6 +14709,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &757515892
 Rigidbody:
@@ -14489,6 +14830,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &765584788
 Rigidbody:
@@ -14609,6 +14951,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &773527634
 Rigidbody:
@@ -14729,6 +15072,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &781015277
 Rigidbody:
@@ -14849,6 +15193,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &785808015
 Rigidbody:
@@ -14952,7 +15297,7 @@ Transform:
   - {fileID: 1833375093}
   - {fileID: 1722770336}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &797055530
 GameObject:
@@ -15014,6 +15359,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &797055534
 Rigidbody:
@@ -15134,6 +15480,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &797753718
 Rigidbody:
@@ -15254,6 +15601,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &801451439
 Rigidbody:
@@ -15374,6 +15722,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &805474245
 Rigidbody:
@@ -15477,7 +15826,7 @@ Transform:
   - {fileID: 478255956}
   - {fileID: 50761375}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &813000259
 GameObject:
@@ -15539,6 +15888,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &813000263
 Rigidbody:
@@ -15599,6 +15949,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 813000259}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &820694890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1895911468076988, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 820694891}
+  - component: {fileID: 820694893}
+  - component: {fileID: 820694892}
+  m_Layer: 0
+  m_Name: Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820694891
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4779901560535254, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820694890}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.06, y: 0.109, z: 0.4160003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 735237056}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &820694892
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23160705546998420, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820694890}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: f4876af20a4041844b6616b9699a3033, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &820694893
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33107534741452936, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820694890}
+  m_Mesh: {fileID: 4300000, guid: 092c843285890964cae15e16cdc082dc, type: 3}
 --- !u!1 &835264780
 GameObject:
   m_ObjectHideFlags: 0
@@ -15659,6 +16085,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &835264784
 Rigidbody:
@@ -15779,6 +16206,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &859610409
 Rigidbody:
@@ -15899,6 +16327,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &861546066
 Rigidbody:
@@ -16019,6 +16448,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &868187242
 Rigidbody:
@@ -16139,6 +16569,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &897647586
 Rigidbody:
@@ -16259,6 +16690,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &907614062
 Rigidbody:
@@ -16379,6 +16811,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &923592617
 Rigidbody:
@@ -16499,6 +16932,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &925524400
 Rigidbody:
@@ -16619,6 +17053,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &928484766
 Rigidbody:
@@ -16739,6 +17174,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &930202489
 Rigidbody:
@@ -16859,6 +17295,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &941291089
 Rigidbody:
@@ -16979,6 +17416,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &942233638
 Rigidbody:
@@ -17099,6 +17537,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &953263369
 Rigidbody:
@@ -17219,6 +17658,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &953425403
 Rigidbody:
@@ -17322,7 +17762,7 @@ Transform:
   - {fileID: 1554682169}
   - {fileID: 1366608648}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961434226
 GameObject:
@@ -17384,6 +17824,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &961434230
 Rigidbody:
@@ -17504,6 +17945,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &963213961
 Rigidbody:
@@ -17624,6 +18066,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &980356286
 Rigidbody:
@@ -17744,6 +18187,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &990558772
 Rigidbody:
@@ -17864,6 +18308,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1010313587
 Rigidbody:
@@ -17984,6 +18429,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1015792185
 Rigidbody:
@@ -18104,6 +18550,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1018731424
 Rigidbody:
@@ -18164,6 +18611,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1018731420}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &1019586915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1019586916}
+  m_Layer: 0
+  m_Name: Cat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1019586916
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019586915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.09, y: 0, z: -0.039}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 351296419}
+  m_Father: {fileID: 466270306}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1021755203
 GameObject:
   m_ObjectHideFlags: 0
@@ -18224,6 +18700,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1021755207
 Rigidbody:
@@ -18344,6 +18821,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1031003540
 Rigidbody:
@@ -18464,6 +18942,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1038161619
 Rigidbody:
@@ -18584,6 +19063,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1039354053
 Rigidbody:
@@ -18704,6 +19184,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1040080138
 Rigidbody:
@@ -18824,6 +19305,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1043228329
 Rigidbody:
@@ -18944,6 +19426,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1051389312
 Rigidbody:
@@ -19064,6 +19547,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1052761265
 Rigidbody:
@@ -19124,6 +19608,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1052761261}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &1054361376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1767358188699116, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1054361377}
+  - component: {fileID: 1054361379}
+  - component: {fileID: 1054361378}
+  m_Layer: 0
+  m_Name: char
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1054361377
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4923546386094062, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054361376}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.16747907, z: -0.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 351296419}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1054361378
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23332277318279924, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054361376}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 82b7cb16e23bac84f819dba0c5ee032b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1054361379
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33369518912968298, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054361376}
+  m_Mesh: {fileID: 4300000, guid: 5861bae19d7a7fe46be023e95cc0ba6d, type: 3}
 --- !u!1 &1058807488
 GameObject:
   m_ObjectHideFlags: 0
@@ -19184,6 +19744,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1058807492
 Rigidbody:
@@ -19244,6 +19805,92 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1058807488}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &1061007660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1239534881824070, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1061007661}
+  - component: {fileID: 1061007664}
+  - component: {fileID: 1061007663}
+  - component: {fileID: 1061007662}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061007661
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4967485837505788, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061007660}
+  m_LocalRotation: {x: 0.2665067, y: 0, z: 0, w: 0.9638331}
+  m_LocalPosition: {x: 0.253, y: 1.382, z: -1.955}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 466270306}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 30.913, y: 0, z: 0}
+--- !u!81 &1061007662
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 81638091905675994, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061007660}
+  m_Enabled: 1
+--- !u!124 &1061007663
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 124906692273051012, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061007660}
+  m_Enabled: 1
+--- !u!20 &1061007664
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 20071492035585120, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061007660}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &1064457985
 GameObject:
   m_ObjectHideFlags: 0
@@ -19304,6 +19951,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1064457989
 Rigidbody:
@@ -19424,6 +20072,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1076064394
 Rigidbody:
@@ -19544,6 +20193,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1082840706
 Rigidbody:
@@ -19664,6 +20314,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1083811364
 Rigidbody:
@@ -19784,6 +20435,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1084000288
 Rigidbody:
@@ -19904,6 +20556,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1084452636
 Rigidbody:
@@ -20024,6 +20677,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1094014700
 Rigidbody:
@@ -20144,6 +20798,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1094304659
 Rigidbody:
@@ -20264,6 +20919,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1104190554
 Rigidbody:
@@ -20399,6 +21055,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!23 &1116609994
 MeshRenderer:
@@ -20504,6 +21161,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1118437568
 Rigidbody:
@@ -20624,6 +21282,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1129868373
 Rigidbody:
@@ -20744,6 +21403,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1131437529
 Rigidbody:
@@ -20864,6 +21524,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1140577752
 Rigidbody:
@@ -20984,6 +21645,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1158712593
 Rigidbody:
@@ -21104,6 +21766,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1168037942
 Rigidbody:
@@ -21224,6 +21887,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1206295354
 Rigidbody:
@@ -21344,6 +22008,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1215801887
 Rigidbody:
@@ -21447,7 +22112,7 @@ Transform:
   - {fileID: 99731564}
   - {fileID: 1343905502}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1230009296
 GameObject:
@@ -21509,6 +22174,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1230009300
 Rigidbody:
@@ -21569,6 +22235,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1230009296}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &1237810257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1237810258}
+  m_Layer: 0
+  m_Name: Bear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1237810258
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237810257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.164, y: 0, z: -0.383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 297573970}
+  m_Father: {fileID: 466270306}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1244405276
 GameObject:
   m_ObjectHideFlags: 0
@@ -21629,6 +22324,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1244405280
 Rigidbody:
@@ -21749,6 +22445,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1244973278
 Rigidbody:
@@ -21869,6 +22566,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1245983080
 Rigidbody:
@@ -21989,6 +22687,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1252302307
 Rigidbody:
@@ -22092,7 +22791,7 @@ Transform:
   - {fileID: 797753715}
   - {fileID: 1955380053}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1273177561
 GameObject:
@@ -22154,6 +22853,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1273177565
 Rigidbody:
@@ -22274,6 +22974,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1274816113
 Rigidbody:
@@ -22394,6 +23095,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1277456160
 Rigidbody:
@@ -22514,6 +23216,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1283743465
 Rigidbody:
@@ -22634,6 +23337,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1285086569
 Rigidbody:
@@ -22754,6 +23458,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1296205110
 Rigidbody:
@@ -22874,6 +23579,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1297451288
 Rigidbody:
@@ -22959,6 +23665,7 @@ Transform:
   m_LocalPosition: {x: -6.795435, y: -0.15311962, z: 14.829421}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 159906484}
   - {fileID: 793589426}
   - {fileID: 9744079}
   - {fileID: 811338070}
@@ -23039,6 +23746,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1316418778
 Rigidbody:
@@ -23159,6 +23867,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1318578787
 Rigidbody:
@@ -23279,6 +23988,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1343905505
 Rigidbody:
@@ -23399,6 +24109,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1357921585
 Rigidbody:
@@ -23519,6 +24230,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1366608651
 Rigidbody:
@@ -23639,6 +24351,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1369553773
 Rigidbody:
@@ -23759,6 +24472,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1375790143
 Rigidbody:
@@ -23879,6 +24593,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1385939331
 Rigidbody:
@@ -23999,6 +24714,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1400898998
 Rigidbody:
@@ -24119,6 +24835,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1403221079
 Rigidbody:
@@ -24239,6 +24956,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1417489776
 Rigidbody:
@@ -24359,6 +25077,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1420719545
 Rigidbody:
@@ -24479,6 +25198,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1422990207
 Rigidbody:
@@ -24599,6 +25319,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1425612550
 Rigidbody:
@@ -24719,6 +25440,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1449704557
 Rigidbody:
@@ -24839,6 +25561,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1451848588
 Rigidbody:
@@ -24959,6 +25682,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1453692374
 Rigidbody:
@@ -25079,6 +25803,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1471654611
 Rigidbody:
@@ -25199,6 +25924,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1478511689
 Rigidbody:
@@ -25319,6 +26045,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1490677913
 Rigidbody:
@@ -25437,13 +26164,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1491384180}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.4195598, y: -0.36817476, z: 0.09585662, w: 0.8241532}
+  m_LocalPosition: {x: 0, y: 3, z: 6.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 49.654003, y: -54.404003, z: -13.483001}
 --- !u!1 &1517684519
 GameObject:
   m_ObjectHideFlags: 0
@@ -25504,6 +26231,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1517684523
 Rigidbody:
@@ -25624,6 +26352,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1545684125
 Rigidbody:
@@ -25744,6 +26473,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1552127234
 Rigidbody:
@@ -25864,6 +26594,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1554682172
 Rigidbody:
@@ -25984,6 +26715,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1555168535
 Rigidbody:
@@ -26104,6 +26836,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1579730500
 Rigidbody:
@@ -26224,6 +26957,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1586184045
 Rigidbody:
@@ -26327,7 +27061,7 @@ Transform:
   - {fileID: 953425400}
   - {fileID: 622602742}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589713613
 GameObject:
@@ -26389,6 +27123,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1589713617
 Rigidbody:
@@ -26509,6 +27244,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1592506141
 Rigidbody:
@@ -26629,6 +27365,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1593978593
 Rigidbody:
@@ -26749,6 +27486,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1609386938
 Rigidbody:
@@ -26869,6 +27607,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1611419724
 Rigidbody:
@@ -26989,6 +27728,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1623886016
 Rigidbody:
@@ -27109,6 +27849,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1638941720
 Rigidbody:
@@ -27229,6 +27970,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1642107882
 Rigidbody:
@@ -27349,6 +28091,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1645587612
 Rigidbody:
@@ -27409,6 +28152,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1645587608}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &1647760683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1497004848384858, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1647760684}
+  - component: {fileID: 1647760686}
+  - component: {fileID: 1647760685}
+  m_Layer: 0
+  m_Name: zipper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1647760684
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4742369667169648, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647760683}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.012449081, y: 0.4038269, z: 0.251}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 297573970}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1647760685
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23025419637531742, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647760683}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: d59f42f2ec0b0554d84b5395e9a78c4e, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1647760686
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33061544393234228, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647760683}
+  m_Mesh: {fileID: 4300002, guid: d59f42f2ec0b0554d84b5395e9a78c4e, type: 3}
 --- !u!1 &1671895715
 GameObject:
   m_ObjectHideFlags: 0
@@ -27469,6 +28288,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1671895719
 Rigidbody:
@@ -27589,6 +28409,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1687535317
 Rigidbody:
@@ -27709,6 +28530,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1689443468
 Rigidbody:
@@ -27829,6 +28651,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1693394443
 Rigidbody:
@@ -27932,7 +28755,7 @@ Transform:
   - {fileID: 664976630}
   - {fileID: 1746709507}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1695664003
 GameObject:
@@ -27994,6 +28817,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1695664007
 Rigidbody:
@@ -28114,6 +28938,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1699758386
 Rigidbody:
@@ -28234,6 +29059,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1717709241
 Rigidbody:
@@ -28337,7 +29163,7 @@ Transform:
   - {fileID: 2065091582}
   - {fileID: 861546063}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1722770335
 GameObject:
@@ -28399,6 +29225,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1722770339
 Rigidbody:
@@ -28519,6 +29346,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1723039674
 Rigidbody:
@@ -28639,6 +29467,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1725840203
 Rigidbody:
@@ -28759,6 +29588,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1727161755
 Rigidbody:
@@ -28879,6 +29709,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1740806143
 Rigidbody:
@@ -28999,6 +29830,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1746709510
 Rigidbody:
@@ -29119,6 +29951,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1746794702
 Rigidbody:
@@ -29239,6 +30072,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1748596459
 Rigidbody:
@@ -29359,6 +30193,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1759540241
 Rigidbody:
@@ -29479,6 +30314,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1761987843
 Rigidbody:
@@ -29599,6 +30435,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1763031130
 Rigidbody:
@@ -29719,6 +30556,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1763773002
 Rigidbody:
@@ -29839,6 +30677,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1767302154
 Rigidbody:
@@ -29959,6 +30798,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1771771495
 Rigidbody:
@@ -30079,6 +30919,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1780801580
 Rigidbody:
@@ -30199,6 +31040,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1782707553
 Rigidbody:
@@ -30319,6 +31161,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1787921673
 Rigidbody:
@@ -30379,6 +31222,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1787921669}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &1788035677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1800316728814312, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1788035678}
+  - component: {fileID: 1788035680}
+  - component: {fileID: 1788035679}
+  m_Layer: 0
+  m_Name: zipper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1788035678
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4903492796360500, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788035677}
+  m_LocalRotation: {x: -0.10260621, y: -0.12406437, z: -0.16582927, w: 0.97292376}
+  m_LocalPosition: {x: -0.077, y: 0.387, z: 0.568}
+  m_LocalScale: {x: 0.3931864, y: 0.3931864, z: 0.25120658}
+  m_Children: []
+  m_Father: {fileID: 735237056}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1788035679
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23961424037993668, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788035677}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 092c843285890964cae15e16cdc082dc, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1788035680
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33948346701018068, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788035677}
+  m_Mesh: {fileID: 4300002, guid: 092c843285890964cae15e16cdc082dc, type: 3}
 --- !u!1 &1788174309
 GameObject:
   m_ObjectHideFlags: 0
@@ -30439,6 +31358,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1788174313
 Rigidbody:
@@ -30559,6 +31479,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1807896979
 Rigidbody:
@@ -30679,6 +31600,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1808630769
 Rigidbody:
@@ -30799,6 +31721,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1812553184
 Rigidbody:
@@ -30919,6 +31842,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1832473959
 Rigidbody:
@@ -31039,6 +31963,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1833375096
 Rigidbody:
@@ -31159,6 +32084,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1835827501
 Rigidbody:
@@ -31219,6 +32145,152 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1835827497}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1001 &1841928018
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_Name
+      value: RoomDraftRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100044, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100038, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100042, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100040, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3c7611e56e00c17409029027ff3b0cb6, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1848468757
 GameObject:
   m_ObjectHideFlags: 0
@@ -31279,6 +32351,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1848468761
 Rigidbody:
@@ -31399,6 +32472,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1853107858
 Rigidbody:
@@ -31519,6 +32593,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1885978658
 Rigidbody:
@@ -31579,6 +32654,82 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1885978654}
   m_Mesh: {fileID: 4300000, guid: b797df36fd702ee4b96182050f547584, type: 3}
+--- !u!1 &1889528043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1015357233381408, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1889528044}
+  - component: {fileID: 1889528046}
+  - component: {fileID: 1889528045}
+  m_Layer: 0
+  m_Name: zipper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1889528044
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4060231536174258, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1889528043}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.037, y: 0.55219084, z: 0.024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 351296419}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1889528045
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23460977444729122, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1889528043}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 5861bae19d7a7fe46be023e95cc0ba6d, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1889528046
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33331396263146442, guid: 41956bc07eeeb464383aa815724aa444,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1889528043}
+  m_Mesh: {fileID: 4300002, guid: 5861bae19d7a7fe46be023e95cc0ba6d, type: 3}
 --- !u!1 &1892810004
 GameObject:
   m_ObjectHideFlags: 0
@@ -31639,6 +32790,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1892810008
 Rigidbody:
@@ -31759,6 +32911,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1893789883
 Rigidbody:
@@ -31879,6 +33032,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1907083150
 Rigidbody:
@@ -31999,6 +33153,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1909150230
 Rigidbody:
@@ -32119,6 +33274,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1913900255
 Rigidbody:
@@ -32239,6 +33395,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1920169474
 Rigidbody:
@@ -32359,6 +33516,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1920229995
 Rigidbody:
@@ -32479,6 +33637,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1933328067
 Rigidbody:
@@ -32599,6 +33758,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1944131442
 Rigidbody:
@@ -32719,6 +33879,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1953676529
 Rigidbody:
@@ -32839,6 +34000,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1955380056
 Rigidbody:
@@ -32942,7 +34104,7 @@ Transform:
   - {fileID: 1168037939}
   - {fileID: 342138854}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1958083244
 GameObject:
@@ -33004,6 +34166,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1958083248
 Rigidbody:
@@ -33124,6 +34287,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1963748699
 Rigidbody:
@@ -33244,6 +34408,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1968012744
 Rigidbody:
@@ -33364,6 +34529,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1968116630
 Rigidbody:
@@ -33484,6 +34650,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1979624615
 Rigidbody:
@@ -33604,6 +34771,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1983064672
 Rigidbody:
@@ -33724,6 +34892,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1985477865
 Rigidbody:
@@ -33827,7 +34996,7 @@ Transform:
   - {fileID: 285672632}
   - {fileID: 1771771492}
   m_Father: {fileID: 1297722668}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1993745751
 GameObject:
@@ -33889,6 +35058,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &1993745755
 Rigidbody:
@@ -34009,6 +35179,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2006928145
 Rigidbody:
@@ -34129,6 +35300,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2019176008
 Rigidbody:
@@ -34249,6 +35421,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2025007670
 Rigidbody:
@@ -34369,6 +35542,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2065091585
 Rigidbody:
@@ -34489,6 +35663,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2067320446
 Rigidbody:
@@ -34609,6 +35784,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2082593728
 Rigidbody:
@@ -34729,6 +35905,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2085267457
 Rigidbody:
@@ -34849,6 +36026,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2086936088
 Rigidbody:
@@ -34969,6 +36147,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2099810690
 Rigidbody:
@@ -35089,6 +36268,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2100597222
 Rigidbody:
@@ -35209,6 +36389,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2104718627
 Rigidbody:
@@ -35329,6 +36510,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2107150061
 Rigidbody:
@@ -35449,6 +36631,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2135102631
 Rigidbody:
@@ -35569,6 +36752,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2142058163
 Rigidbody:
@@ -35689,6 +36873,7 @@ MonoBehaviour:
   isStartingTile: 0
   currentWeight: 0
   goalRow: {fileID: 0}
+  color: 0
   adjancentTiles: []
 --- !u!54 &2145834771
 Rigidbody:
