@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TileSelector : MonoBehaviour
 {
-    public bool isSafe;
+    public bool isSafe = false;
     public bool isStartingTile;
     public float currentWeight;
     public GameObject goalRow;
@@ -16,7 +16,7 @@ public class TileSelector : MonoBehaviour
 
     void Awake()
     {
-        isSafe = false;
+       // isSafe = false;
         currentWeight = 0;
 
         if (isStartingTile)
@@ -34,7 +34,7 @@ public class TileSelector : MonoBehaviour
 
     void SelectNextSafe(GameObject _goalRow)
     {
-       // Debug.Log(this.gameObject.name);
+        //Debug.Log(this.gameObject.name);
         isSafe = true;
         color = Random.Range(1, 4);
         currentWeight += 5;

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour {
+public class PlayerScript : MonoBehaviour
+{
 
 
     public GameObject tallChar;
@@ -25,25 +26,26 @@ public class PlayerScript : MonoBehaviour {
 
     public int front = 2;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         transform.position = new Vector3(level.startingTile.transform.position.x, transform.position.y, level.startingTile.transform.position.z);
         coolTimer = 0;
 
         left = tallChar.transform.localPosition;
         right = shortchar.transform.localPosition;
         lead = medChar.transform.localPosition;
-	}
+    }
 
     void switchCharsLeft()
     {
-        if(front == 1)
+        if (front == 1)
         {
             front = 2;
             tallChar.transform.localPosition = left;
             medChar.transform.localPosition = lead;
             shortchar.transform.localPosition = right;
-            
+
         }
         else if (front == 2)
         {
@@ -54,7 +56,7 @@ public class PlayerScript : MonoBehaviour {
             shortchar.transform.localPosition = lead;
 
         }
-        else if(front == 3)
+        else if (front == 3)
         {
 
             front = 1;
@@ -70,7 +72,7 @@ public class PlayerScript : MonoBehaviour {
 
         if (front == 1)
         {
-           
+
 
             front = 3;
             tallChar.transform.localPosition = right;
@@ -94,17 +96,17 @@ public class PlayerScript : MonoBehaviour {
             medChar.transform.localPosition = lead;
             shortchar.transform.localPosition = right;
 
-           
+
         }
 
 
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
 
-        if(!canMove)
+        if (!canMove)
         {
             coolTimer -= Time.deltaTime;
             if (coolTimer <= 0)
@@ -120,19 +122,23 @@ public class PlayerScript : MonoBehaviour {
         {
             if (Input.GetKey(KeyCode.W))
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z +.98f);
+                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + .98f);
+                checkTile();
             }
             else if (Input.GetKey(KeyCode.A))
             {
                 transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
+                checkTile();
             }
             else if (Input.GetKey(KeyCode.S))
             {
-                transform.position = new Vector3(transform.position.x , transform.position.y, transform.position.z - .98f);
+                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
+                checkTile();
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
+                checkTile();
             }
 
             level.showTiles(front);
@@ -140,11 +146,11 @@ public class PlayerScript : MonoBehaviour {
             coolTimer = cool;
             canMove = false;
         }
-       
-        if(!canSwap)
+
+        if (!canSwap)
         {
             swapTimer -= Time.deltaTime;
-            if(swapTimer <= 0)
+            if (swapTimer <= 0)
             {
 
                 canSwap = true;
@@ -152,7 +158,7 @@ public class PlayerScript : MonoBehaviour {
             }
 
         }
-        
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             if (canSwap)
@@ -176,6 +182,26 @@ public class PlayerScript : MonoBehaviour {
         }
 
 
+
+    }
+
+    void checkTile()
+    {
+
+        Ray r = new Ray(transform.position, Vector3.down);
+
+        RaycastHit rHit = new RaycastHit();
+        Physics.Raycast(r, out rHit);
+
+        TileSelector tS = rHit.transform.gameObject.GetComponent<TileSelector>();
+        if (!tS.isSafe)
+        {
+
+            //die
+            Debug.Log("DEATH");
+            transform.position = new Vector3(level.startingTile.transform.position.x, transform.position.y, level.startingTile.transform.position.z);
+
+        }
 
     }
 }
