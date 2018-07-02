@@ -14,32 +14,47 @@ public class TileSelector : MonoBehaviour
     public List<GameObject> adjancentTiles = new List<GameObject>();
     int layerMask = 1 << 9;
 
-    void Awake()
-    {
-       // isSafe = false;
+    void Awake(){
+        // isSafe = false;
         currentWeight = 0;
+        SetupBoard();
+    }
 
-        if (isStartingTile)
-        {
+    public void SetupBoard(){
+        if (isStartingTile){
             color = Random.Range(1, 4);
             GameObject.FindObjectOfType<BoardManager>().startingTile = gameObject;
             isSafe = true;
             ShootRayCasts();
-            currentWeight += 5;
+            currentWeight += 1;
             int choice = Random.Range(0, adjancentTiles.Count);
             GameObject next = adjancentTiles[choice];
             next.GetComponent<TileSelector>().SelectNextSafe(goalRow);
         }
     }
 
-    void SelectNextSafe(GameObject _goalRow)
-    {
+    public void ClearBoard(){
+        GameObject Board = GameObject.Find("Board");
+        foreach(Transform child in Board.transform){
+            if(child.GetComponent<BoardManager>() == null){
+                foreach(Transform grandchild in child.transform){
+                    TileSelector _ts = grandchild.GetComponent<TileSelector>();
+                    if(_ts != null){
+                        _ts.isSafe = false;
+                        _ts.currentWeight = 0;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    void SelectNextSafe(GameObject _goalRow){
         //Debug.Log(this.gameObject.name);
         isSafe = true;
         color = Random.Range(1, 4);
-        currentWeight += 5;
-        if (!this.gameObject.transform.IsChildOf(_goalRow.transform))
-        {
+        currentWeight += 1;
+        if (!this.gameObject.transform.IsChildOf(_goalRow.transform)){
             ShootRayCasts();
             float minWeight = 1000;
             List<GameObject> possible = new List<GameObject>();
@@ -64,12 +79,11 @@ public class TileSelector : MonoBehaviour
             GameObject next = adjancentTiles[choice];
             next.GetComponent<TileSelector>().SelectNextSafe(_goalRow);
         }
-        else
-        {
+        else{
             Debug.Log("Done");
         }
     }
-
+    
     void ShootRayCasts()
     {
         Vector3 start = Vector3.zero;
