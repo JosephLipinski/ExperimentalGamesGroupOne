@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{5160F8EF-CF5D-A2C0-19C8-07DFDA9C50F4}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TileSelector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/TileSelector.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/TileSelector.cs" Line="6" Column="2" />
+      <File FileName="Assets/PlayerScript.cs" Line="8" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
