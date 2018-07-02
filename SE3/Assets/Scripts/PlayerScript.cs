@@ -24,6 +24,10 @@ public class PlayerScript : MonoBehaviour
     public float swapTimer = 0;
     public bool canSwap;
 
+    public float tooLong = 4;
+    public float tooLongTimer = 4;
+
+
     public int front = 2;
 
     // Use this for initialization
@@ -108,6 +112,7 @@ public class PlayerScript : MonoBehaviour
 
         if (!canMove)
         {
+
             coolTimer -= Time.deltaTime;
             if (coolTimer <= 0)
             {
@@ -182,12 +187,19 @@ public class PlayerScript : MonoBehaviour
         }
 
 
+        tooLongTimer -= Time.deltaTime;
+        if(tooLongTimer <= 0)
+        {
+
+            Die();
+
+        }
 
     }
 
     void checkTile()
     {
-
+        tooLongTimer = tooLong;
         Ray r = new Ray(transform.position, Vector3.down);
 
         RaycastHit rHit = new RaycastHit();
@@ -198,10 +210,17 @@ public class PlayerScript : MonoBehaviour
         {
 
             //die
-            Debug.Log("DEATH");
-            transform.position = new Vector3(level.startingTile.transform.position.x, transform.position.y, level.startingTile.transform.position.z);
+            Die();
 
         }
+        
+
+    }
+
+    void Die()
+    {
+        Debug.Log("DEATH");
+        transform.position = new Vector3(level.startingTile.transform.position.x, transform.position.y, level.startingTile.transform.position.z);
 
     }
 }
