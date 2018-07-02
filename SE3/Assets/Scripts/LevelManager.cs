@@ -9,14 +9,20 @@ public class LevelManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         DontDestroyOnLoad(this.gameObject);
+        LevelManager[] lvlMan = GameObject.FindObjectsOfType<LevelManager>();
+        if(lvlMan.Length > 1)
+        {
+            Destroy(gameObject);
+
+        }
 	}
 
     public void startGame()
     {
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-
-    }
+        currentLevel = 0;
+}
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,10 +39,10 @@ public class LevelManager : MonoBehaviour {
 
         currentLevel += 1;
 
-        if(currentLevel == 100)
+        if(currentLevel == 11)
         {
 
-            //victory screen
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
 
         }
 

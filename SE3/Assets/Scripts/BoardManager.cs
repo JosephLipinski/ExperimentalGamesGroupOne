@@ -25,7 +25,7 @@ public class BoardManager : MonoBehaviour {
 	void Start () {
 
         levelman = GameObject.FindObjectOfType<LevelManager>();
-
+       
         mats = new Dictionary<int, UnityEngine.Material>();
         mats.Add(0, none);
         mats.Add(1, first);
