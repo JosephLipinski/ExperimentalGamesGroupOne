@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Modified for a push
 public class TileSelector : MonoBehaviour {
 	public bool isSafe;
 	public bool isStartingTile;
