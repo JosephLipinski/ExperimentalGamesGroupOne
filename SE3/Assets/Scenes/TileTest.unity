@@ -9151,10 +9151,10 @@ MonoBehaviour:
   medChar: {fileID: 1019586915}
   shortchar: {fileID: 1237810257}
   level: {fileID: 159906485}
-  cool: 0.08
+  cool: 0
   coolTimer: 0
   canMove: 0
-  swapCool: 0.1
+  swapCool: 0
   swapTimer: 0
   canSwap: 0
   tooLong: 4

@@ -125,23 +125,23 @@ public class PlayerScript : MonoBehaviour
         //MOTION
         if (canMove)
         {
-            if (Input.GetKey(KeyCode.W) && transform.position.z + .98f < 16.5f)
+            if (Input.GetKeyDown(KeyCode.W) && transform.position.z + .98f < 16.5f)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + .98f);
                 checkTile();
             }
-            else if (Input.GetKey(KeyCode.A) && transform.position.x - .98f > -8.5f)
+            else if (Input.GetKeyDown(KeyCode.A) && transform.position.x - .98f > -8.5f)
             {
                 transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
                 checkTile();
 
             }
-            else if (Input.GetKey(KeyCode.S) && transform.position.z - .98f > 0f)
+            else if (Input.GetKeyDown(KeyCode.S) && transform.position.z - .98f > 0f)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
                 checkTile();
             }
-            else if (Input.GetKey(KeyCode.D) && transform.position.x + .98f < 8f)
+            else if (Input.GetKeyDown(KeyCode.D) && transform.position.x + .98f < 8f)
             {
                 transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
                 checkTile();
@@ -165,7 +165,7 @@ public class PlayerScript : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (canSwap)
             {
@@ -176,7 +176,7 @@ public class PlayerScript : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (canSwap)
             {
