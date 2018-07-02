@@ -16,8 +16,15 @@ public class BoardManager : MonoBehaviour {
     public UnityEngine.Material second;
     public UnityEngine.Material third;
 
+    public LevelManager levelman;
+
+    public InBetween inBetween;
+
+
 	// Use this for initialization
 	void Start () {
+
+        levelman = GameObject.FindObjectOfType<LevelManager>();
 
         mats = new Dictionary<int, UnityEngine.Material>();
         mats.Add(0, none);
@@ -26,12 +33,14 @@ public class BoardManager : MonoBehaviour {
         mats.Add(3, third);
         mats.Add(4, dark);
 
-		//foreach(TileSelector g in GameObject.FindObjectsOfType<TileSelector>())
-  //      {
-  //          g.gameObject.GetComponent<MeshRenderer>().material = mats[g.color];
+        nextLevel();
 
-  //      }
-	}
+        //foreach(TileSelector g in GameObject.FindObjectsOfType<TileSelector>())
+        //      {
+        //          g.gameObject.GetComponent<MeshRenderer>().material = mats[g.color];
+
+        //      }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -60,6 +69,7 @@ public class BoardManager : MonoBehaviour {
             {
 
                 g.gameObject.GetComponent<MeshRenderer>().material = mats[4];
+              
 
             }
 
@@ -68,5 +78,35 @@ public class BoardManager : MonoBehaviour {
 
 
 
+    }
+
+    void nextLevel()
+    {
+        levelman.upLevel();
+        inBetween.levelnum.text = levelman.currentLevel.ToString();
+        inBetween.gameObject.SetActive(true);
+        inBetween.StartCountdown();
+
+        //generate new maze
+        TileSelector start = startingTile.GetComponent<TileSelector>();
+
+        start.ClearBoard();
+        start.SetupBoard();
+
+
+        showTiles(player.GetComponent<PlayerScript>().front);
+        player.gameObject.transform.position = new Vector3(startingTile.transform.position.x, transform.position.y, startingTile.transform.position.z);
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            Debug.Log("WIN");
+
+            nextLevel();
+
+        }
     }
 }

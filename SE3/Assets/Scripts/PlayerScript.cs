@@ -125,22 +125,23 @@ public class PlayerScript : MonoBehaviour
         //MOTION
         if (canMove)
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) && transform.position.z + .98f < 16.5f)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + .98f);
                 checkTile();
             }
-            else if (Input.GetKey(KeyCode.A))
+            else if (Input.GetKey(KeyCode.A) && transform.position.x - .98f > -8.5f)
             {
                 transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
                 checkTile();
+
             }
-            else if (Input.GetKey(KeyCode.S))
+            else if (Input.GetKey(KeyCode.S) && transform.position.z - .98f > 0f)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
                 checkTile();
             }
-            else if (Input.GetKey(KeyCode.D))
+            else if (Input.GetKey(KeyCode.D) && transform.position.x + .98f < 8f)
             {
                 transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
                 checkTile();
@@ -206,7 +207,7 @@ public class PlayerScript : MonoBehaviour
         Physics.Raycast(r, out rHit);
 
         TileSelector tS = rHit.transform.gameObject.GetComponent<TileSelector>();
-        if (!tS.isSafe)
+        if (tS != null && !tS.isSafe)
         {
 
             //die

@@ -41,6 +41,7 @@ public class TileSelector : MonoBehaviour
                     TileSelector _ts = grandchild.GetComponent<TileSelector>();
                     if(_ts != null){
                         _ts.isSafe = false;
+                        _ts.color = 0;
                         _ts.currentWeight = 0;
                     }
                 }
