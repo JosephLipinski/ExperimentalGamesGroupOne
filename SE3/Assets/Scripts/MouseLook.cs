@@ -7,12 +7,13 @@ using UnityEngine;
  */
 
 public class MouseLook : MonoBehaviour{
-    
-    public enum RotationAxes { 
-                                MouseXAndY = 0, 
-                                MouseX = 1, 
-                                MouseY = 2 
-                             }
+
+    public enum RotationAxes
+    {
+        MouseXAndY = 0,
+        MouseX = 1,
+        MouseY = 2
+    }
 
     public RotationAxes axes = RotationAxes.MouseXAndY;
     public float sensitivityX = 15F;

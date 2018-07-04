@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-
+    LevelManager _lm;
+    Rigidbody _rb;
 
     public GameObject tallChar;
     public GameObject medChar;
@@ -15,10 +16,12 @@ public class PlayerScript : MonoBehaviour
     Vector3 right;
 
     public BoardManager level;
+    public GameObject respawnPoint;
+    Vector3 respawnLocation;
 
     public float cool = 0.25f;
     public float coolTimer;
-    public bool canMove;
+    public bool canMove = true;
 
     public float swapCool = 0.1f;
     public float swapTimer = 0;
@@ -27,13 +30,17 @@ public class PlayerScript : MonoBehaviour
     public float tooLong = 4;
     public float tooLongTimer = 4;
 
+    bool atSpawn = true;
+
 
     public int front = 2;
 
-    // Use this for initialization
-    void Start()
+    private void Awake()
     {
-        transform.position = new Vector3(level.startingTile.transform.position.x, transform.position.y, level.startingTile.transform.position.z);
+        _lm = GameObject.FindObjectOfType<LevelManager>();
+        _rb = GetComponent<Rigidbody>();
+        respawnLocation = respawnPoint.GetComponent<Transform>().position;
+        transform.position = respawnLocation;
         coolTimer = 0;
 
         left = tallChar.transform.localPosition;
@@ -106,96 +113,85 @@ public class PlayerScript : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        if (!canMove)
-        {
-
-            coolTimer -= Time.deltaTime;
-            if (coolTimer <= 0)
-            {
-                canMove = true;
-
+    IEnumerator Start(){
+        while(true){
+            if(atSpawn){
+                //Debug.Log("HERE");
+                if(Input.GetKeyDown(KeyCode.W)){
+                    transform.position = new Vector3(level.startingTile.transform.position.x, transform.position.y, level.startingTile.transform.position.z);
+                    atSpawn = false;
+                }
+                
             }
+            else{
+                if (Input.GetKeyDown(KeyCode.W) && transform.position.z + .98f < 16.5f)
+                {
+                    transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.98f);
+                }
+                else if (Input.GetKeyDown(KeyCode.A) && transform.position.x - .98f > -8.5f)
+                {
+                    transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
+                }
+                else if (Input.GetKeyDown(KeyCode.S) && transform.position.z - .98f > 0f)
+                {
+                    transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
+                }
+                else if (Input.GetKeyDown(KeyCode.D) && transform.position.x + .98f < 8f)
+                {
+                    transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
+                }
 
-        }
-
-        //MOTION
-        if (canMove)
-        {
-            if (Input.GetKeyDown(KeyCode.W) && transform.position.z + .98f < 16.5f)
-            {
-                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + .98f);
                 checkTile();
+
+                level.showTiles(front);
+
+                coolTimer = cool;
             }
-            else if (Input.GetKeyDown(KeyCode.A) && transform.position.x - .98f > -8.5f)
+
+            if (!canSwap)
             {
-                transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
-                checkTile();
+                swapTimer -= Time.deltaTime;
+                if (swapTimer <= 0)
+                {
+
+                    canSwap = true;
+
+                }
 
             }
-            else if (Input.GetKeyDown(KeyCode.S) && transform.position.z - .98f > 0f)
+
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Mouse0))
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
-                checkTile();
+                if (canSwap)
+                {
+                    switchCharsLeft();
+                    canSwap = false;
+                    swapTimer = swapCool;
+                }
+
             }
-            else if (Input.GetKeyDown(KeyCode.D) && transform.position.x + .98f < 8f)
+
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Mouse1))
             {
-                transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
-                checkTile();
-            }
-
-            level.showTiles(front);
-
-            coolTimer = cool;
-            canMove = false;
-        }
-
-        if (!canSwap)
-        {
-            swapTimer -= Time.deltaTime;
-            if (swapTimer <= 0)
-            {
-
-                canSwap = true;
+                if (canSwap)
+                {
+                    switchCharsRight();
+                    canSwap = false;
+                    swapTimer = swapCool;
+                }
 
             }
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            if (canSwap)
-            {
-                switchCharsLeft();
-                canSwap = false;
-                swapTimer = swapCool;
-            }
+            
+            yield return null;
 
         }
+        yield return null;
+    }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            if (canSwap)
-            {
-                switchCharsRight();
-                canSwap = false;
-                swapTimer = swapCool;
-            }
-
-        }
-
-
-        tooLongTimer -= Time.deltaTime;
-        if(tooLongTimer <= 0)
-        {
-
-            Die();
-
-        }
-
+    IEnumerator SwapCooldown(){
+        yield return new WaitForSeconds(0.1f);
+        canSwap = true;
+        yield return null;
     }
 
     void checkTile()
@@ -207,21 +203,22 @@ public class PlayerScript : MonoBehaviour
         Physics.Raycast(r, out rHit);
 
         TileSelector tS = rHit.transform.gameObject.GetComponent<TileSelector>();
-        if (tS != null && !tS.isSafe)
-        {
-
-            //die
+        if (tS != null && !tS.isSafe){
             Die();
-
         }
-        
-
     }
 
     void Die()
     {
-        Debug.Log("DEATH");
-        transform.position = new Vector3(level.startingTile.transform.position.x, transform.position.y, level.startingTile.transform.position.z);
+        transform.position = respawnLocation;
+        atSpawn = true;
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "KillPlane"){
+            Die();
+        }
+        
     }
 }

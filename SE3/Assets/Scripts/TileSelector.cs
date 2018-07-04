@@ -4,22 +4,30 @@ using UnityEngine;
 
 public class TileSelector : MonoBehaviour
 {
+    //The bool that handles whether a tile is safe to stand on
     public bool isSafe = false;
+    //The bool to signify which tile from which to start path generation
     public bool isStartingTile;
+    //A weight representing the number of adjancent safe tiles to the current tile
     public float currentWeight;
+    //The row that is on the other side of the board
     public GameObject goalRow;
-
+    //A integer for color picking
     public int color;
 
+    //A list of adjancent tiles
     public List<GameObject> adjancentTiles = new List<GameObject>();
+    //A calucaltion to find which layer mask to collide with
     int layerMask = 1 << 9;
 
+    //Called when the GameObject is activated
     void Awake(){
         // isSafe = false;
         currentWeight = 0;
         SetupBoard();
     }
 
+    //Method which intializes the board
     public void SetupBoard(){
         if (isStartingTile){
             color = Random.Range(1, 4);
@@ -33,6 +41,7 @@ public class TileSelector : MonoBehaviour
         }
     }
 
+    //Clears the board
     public void ClearBoard(){
         GameObject Board = GameObject.Find("Board");
         foreach(Transform child in Board.transform){
@@ -50,6 +59,7 @@ public class TileSelector : MonoBehaviour
         
     }
 
+    //Handles path generation
     void SelectNextSafe(GameObject _goalRow){
         //Debug.Log(this.gameObject.name);
         isSafe = true;
@@ -84,7 +94,8 @@ public class TileSelector : MonoBehaviour
             Debug.Log("Done");
         }
     }
-    
+
+    //Shoots raycast forward, left, and right and adds the hit gameobjects to a list
     void ShootRayCasts()
     {
         Vector3 start = Vector3.zero;

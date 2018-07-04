@@ -95,7 +95,7 @@ public class BoardManager : MonoBehaviour {
 
 
         showTiles(player.GetComponent<PlayerScript>().front);
-        player.gameObject.transform.position = new Vector3(startingTile.transform.position.x, transform.position.y, startingTile.transform.position.z);
+        // player.gameObject.transform.position = new Vector3(startingTile.transform.position.x, transform.position.y, startingTile.transform.position.z);
 
     }
 
