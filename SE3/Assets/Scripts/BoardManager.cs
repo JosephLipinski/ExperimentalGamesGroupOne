@@ -33,7 +33,7 @@ public class BoardManager : MonoBehaviour {
         mats.Add(3, third);
         mats.Add(4, dark);
 
-        nextLevel();
+        //nextLevel();
 
         //foreach(TileSelector g in GameObject.FindObjectsOfType<TileSelector>())
         //      {

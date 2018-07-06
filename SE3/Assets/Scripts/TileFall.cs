@@ -42,9 +42,12 @@ public class TileFall : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        if(other.gameObject.tag == "Player"){
+        if (other.gameObject.tag == "Player"){
             //Debug.Log("Hit the player");
             StartCoroutine(ShakeTile());
+        }
+        else if (other.gameObject.tag == "KillPlane"){
+            ReplaceTile();
         }
     }
 
@@ -72,8 +75,6 @@ public class TileFall : MonoBehaviour
         _transform.rotation = initialRotation;
         _rb.useGravity = true;
         _rb.isKinematic = false;
-        yield return new WaitForSeconds(3.0f);
-        ReplaceTile();
         yield return null;
     }
 

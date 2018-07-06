@@ -141,8 +141,6 @@ public class PlayerScript : MonoBehaviour
                     transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
                 }
 
-                checkTile();
-
                 level.showTiles(front);
 
                 coolTimer = cool;
@@ -218,6 +216,10 @@ public class PlayerScript : MonoBehaviour
     {
         if(other.gameObject.tag == "KillPlane"){
             Die();
+        }
+
+        if(other.gameObject.layer == 9){
+            checkTile();
         }
         
     }
