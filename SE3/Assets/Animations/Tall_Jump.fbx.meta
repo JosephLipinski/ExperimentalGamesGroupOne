@@ -55,8 +55,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Tall_Jump
       takeName: Take 001
-      firstFrame: 150
-      lastFrame: 400
+      firstFrame: 163
+      lastFrame: 181
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

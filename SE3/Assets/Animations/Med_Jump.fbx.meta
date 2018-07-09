@@ -67,7 +67,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Med_Jump
       takeName: Take 001
-      firstFrame: 150
+      firstFrame: 162
       lastFrame: 181
       wrapMode: 0
       orientationOffsetY: 0

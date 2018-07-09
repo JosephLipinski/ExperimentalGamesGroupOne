@@ -14,10 +14,13 @@ public class PlayerScript : MonoBehaviour
     Vector3 lead;
     Vector3 left;
     Vector3 right;
+    public float jumpDelay = 0.2f;
 
     public BoardManager level;
     public GameObject respawnPoint;
     Vector3 respawnLocation;
+
+    private Animator[] charAnims;
 
     private bool atSpawn, canMove, canSwap;
 
@@ -38,6 +41,8 @@ public class PlayerScript : MonoBehaviour
         atSpawn = true;
         canSwap = true;
         canMove = true;
+
+        charAnims = GameObject.FindObjectsOfType<Animator>();
     }
 
     void switchCharsLeft()
@@ -119,24 +124,28 @@ public class PlayerScript : MonoBehaviour
                 if(canMove){
                     if (Input.GetKeyDown(KeyCode.W) && transform.position.z + .98f < 16.5f)
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.98f);
+                        StartCoroutine(movePlayer(new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.98f)));
                         StartCoroutine(MoveCooldown());
+                        Jump();
 
                     }
                     else if (Input.GetKeyDown(KeyCode.A) && transform.position.x - .98f > -8.5f)
                     {
-                        transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
+                        StartCoroutine(movePlayer(new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z)));
                         StartCoroutine(MoveCooldown());
+                        Jump();
                     }
                     else if (Input.GetKeyDown(KeyCode.S) && transform.position.z - .98f > 0f)
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
+                        StartCoroutine(movePlayer(new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f)));
                         StartCoroutine(MoveCooldown());
+                        Jump();
                     }
                     else if (Input.GetKeyDown(KeyCode.D) && transform.position.x + .98f < 8f)
                     {
-                        transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
+                        StartCoroutine(movePlayer(new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z)));
                         StartCoroutine(MoveCooldown());
+                        Jump();
                     }
 
 
@@ -172,6 +181,13 @@ public class PlayerScript : MonoBehaviour
         yield return null;
     }
 
+    IEnumerator movePlayer(Vector3 go)
+    {
+        yield return new WaitForSeconds(jumpDelay);
+        transform.position = go;
+
+    }
+
     IEnumerator SwapCooldown(){
         canSwap = false;
         yield return new WaitForSeconds(0.1f);
@@ -185,6 +201,17 @@ public class PlayerScript : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         canMove = true;
         yield return null;
+    }
+
+    void Jump()
+    {
+        foreach(Animator a in charAnims)
+        {
+            a.SetTrigger("jump");
+
+        }
+
+
     }
 
     void checkTile()
