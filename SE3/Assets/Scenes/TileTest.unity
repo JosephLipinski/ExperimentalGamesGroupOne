@@ -10982,14 +10982,6 @@ MonoBehaviour:
   shortchar: {fileID: 1237810257}
   level: {fileID: 159906485}
   respawnPoint: {fileID: 508319511}
-  cool: 0
-  coolTimer: 0
-  canMove: 0
-  swapCool: 0
-  swapTimer: 0
-  canSwap: 0
-  tooLong: 4
-  tooLongTimer: 4
   front: 2
 --- !u!4 &466270306
 Transform:

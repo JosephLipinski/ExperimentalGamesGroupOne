@@ -73,9 +73,13 @@ public class TileFall : MonoBehaviour
         }
         intensity = 0;
         _transform.rotation = initialRotation;
+        Fall();
+        yield return null;
+    }
+
+    public void Fall(){
         _rb.useGravity = true;
         _rb.isKinematic = false;
-        yield return null;
     }
 
 }

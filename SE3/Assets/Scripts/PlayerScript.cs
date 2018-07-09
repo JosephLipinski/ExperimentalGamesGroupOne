@@ -19,18 +19,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject respawnPoint;
     Vector3 respawnLocation;
 
-    public float cool = 0.25f;
-    public float coolTimer;
-    public bool canMove = true;
-
-    public float swapCool = 0.1f;
-    public float swapTimer = 0;
-    public bool canSwap;
-
-    public float tooLong = 4;
-    public float tooLongTimer = 4;
-
-    bool atSpawn = true;
+    private bool atSpawn, canMove, canSwap;
 
 
     public int front = 2;
@@ -41,11 +30,14 @@ public class PlayerScript : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         respawnLocation = respawnPoint.GetComponent<Transform>().position;
         transform.position = respawnLocation;
-        coolTimer = 0;
 
         left = tallChar.transform.localPosition;
         right = shortchar.transform.localPosition;
         lead = medChar.transform.localPosition;
+
+        atSpawn = true;
+        canSwap = true;
+        canMove = true;
     }
 
     void switchCharsLeft()
@@ -125,40 +117,33 @@ public class PlayerScript : MonoBehaviour
             }
             else{
                 if(canMove){
-                    yield return new WaitForSeconds(1.0f);
-
                     if (Input.GetKeyDown(KeyCode.W) && transform.position.z + .98f < 16.5f)
                     {
                         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.98f);
+                        StartCoroutine(MoveCooldown());
+
                     }
                     else if (Input.GetKeyDown(KeyCode.A) && transform.position.x - .98f > -8.5f)
                     {
                         transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
+                        StartCoroutine(MoveCooldown());
                     }
                     else if (Input.GetKeyDown(KeyCode.S) && transform.position.z - .98f > 0f)
                     {
                         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
+                        StartCoroutine(MoveCooldown());
                     }
                     else if (Input.GetKeyDown(KeyCode.D) && transform.position.x + .98f < 8f)
                     {
                         transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
+                        StartCoroutine(MoveCooldown());
                     }
+
+
                 }
 
 
                 level.showTiles(front);
-            }
-
-            if (!canSwap)
-            {
-                swapTimer -= Time.deltaTime;
-                if (swapTimer <= 0)
-                {
-
-                    canSwap = true;
-
-                }
-
             }
 
             if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Mouse0))
@@ -166,8 +151,7 @@ public class PlayerScript : MonoBehaviour
                 if (canSwap)
                 {
                     switchCharsLeft();
-                    canSwap = false;
-                    swapTimer = swapCool;
+                    StartCoroutine(SwapCooldown());
                 }
 
             }
@@ -177,8 +161,7 @@ public class PlayerScript : MonoBehaviour
                 if (canSwap)
                 {
                     switchCharsRight();
-                    canSwap = false;
-                    swapTimer = swapCool;
+                    StartCoroutine(SwapCooldown());
                 }
 
             }
@@ -190,14 +173,22 @@ public class PlayerScript : MonoBehaviour
     }
 
     IEnumerator SwapCooldown(){
+        canSwap = false;
         yield return new WaitForSeconds(0.1f);
         canSwap = true;
         yield return null;
     }
 
+    IEnumerator MoveCooldown()
+    {
+        canMove = false;
+        yield return new WaitForSeconds(0.1f);
+        canMove = true;
+        yield return null;
+    }
+
     void checkTile()
     {
-        tooLongTimer = tooLong;
         Ray r = new Ray(transform.position, Vector3.down);
 
         RaycastHit rHit = new RaycastHit();
@@ -205,7 +196,8 @@ public class PlayerScript : MonoBehaviour
 
         TileSelector tS = rHit.transform.gameObject.GetComponent<TileSelector>();
         if (tS != null && !tS.isSafe){
-            Die();
+            TileFall _tf = rHit.transform.gameObject.GetComponent<TileFall>();
+            _tf.Fall();
         }
     }
 
@@ -223,6 +215,7 @@ public class PlayerScript : MonoBehaviour
 
         if(other.gameObject.layer == 9){
             checkTile();
+
         }
         
     }

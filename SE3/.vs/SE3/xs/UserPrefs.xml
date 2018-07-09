@@ -1,6 +1,11 @@
 ﻿<Properties StartupConfiguration="{5160F8EF-CF5D-A2C0-19C8-07DFDA9C50F4}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TileFall.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerScript.cs" Line="123" Column="56" />
+      <File FileName="Assets/Scripts/TileFall.cs" Line="76" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
