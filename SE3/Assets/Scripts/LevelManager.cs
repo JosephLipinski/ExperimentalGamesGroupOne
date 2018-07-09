@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour {
     {
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        upLevel();
+        //upLevel();
     }
 	
 	// Update is called once per frame
@@ -52,7 +52,10 @@ public class LevelManager : MonoBehaviour {
             colors = GetComponent<ColorChanger>();
 
         }
-        colors.incrementLevel();
+        if (colors)
+        {
+            colors.incrementLevel();
+        }
         if(currentLevel % 5 == 0 && tileShakeTime > 4){
             tileShakeTime -= 1;
         }

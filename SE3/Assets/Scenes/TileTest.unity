@@ -4179,6 +4179,7 @@ GameObject:
   - component: {fileID: 159906484}
   - component: {fileID: 159906485}
   - component: {fileID: 159906486}
+  - component: {fileID: 159906487}
   m_Layer: 0
   m_Name: BoardManager
   m_TagString: Untagged
@@ -4232,6 +4233,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 17.457874, y: 3.8715916, z: 1}
   m_Center: {x: -0.119846344, y: 1.4357958, z: 0}
+--- !u!114 &159906487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 159906483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8244183c6f3df42b923a65db670a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flames:
+  - {fileID: 1129195528}
+  - {fileID: 1106180322}
+  wallMat: {fileID: 2100000, guid: f5fa0222ee2ab614883273ef39aa8bf7, type: 2}
+  level: 0
+  r: 0
+  g: 0
+  b: 0
 --- !u!1 &170909050
 GameObject:
   m_ObjectHideFlags: 0
@@ -36596,7 +36616,6 @@ GameObject:
   m_Component:
   - component: {fileID: 973057380}
   - component: {fileID: 973057379}
-  - component: {fileID: 973057381}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -36630,25 +36649,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &973057381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 973057378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8244183c6f3df42b923a65db670a25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flames:
-  - {fileID: 1129195528}
-  - {fileID: 1106180322}
-  wallMat: {fileID: 2100000, guid: f5fa0222ee2ab614883273ef39aa8bf7, type: 2}
-  level: 0
-  r: 0
-  g: 0
-  b: 0
 --- !u!1 &980356282
 GameObject:
   m_ObjectHideFlags: 0
