@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour {
     {
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        currentLevel = 0;
+        upLevel();
     }
 	
 	// Update is called once per frame

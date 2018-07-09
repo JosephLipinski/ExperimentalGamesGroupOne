@@ -18,7 +18,7 @@ public class ColorChanger : MonoBehaviour {
 	void Start () {
 
         DontDestroyOnLoad(gameObject);
-		
+        incrementLevel();
 	}
 
     private void Update()
