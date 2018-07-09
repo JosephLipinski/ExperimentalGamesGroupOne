@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour {
     
     public float tileShakeTime;
 
+    private ColorChanger colors;
+
 	// Use this for initialization
 	void Start () {
         DontDestroyOnLoad(this.gameObject);
@@ -18,13 +20,14 @@ public class LevelManager : MonoBehaviour {
             Destroy(gameObject);
 
         }
+
 	}
 
     public void startGame()
     {
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        currentLevel = 0;
+        upLevel();
     }
 	
 	// Update is called once per frame
@@ -35,13 +38,21 @@ public class LevelManager : MonoBehaviour {
             Application.Quit();
 
         }
+        
 	}
 
     public void upLevel()
     {
 
         currentLevel += 1;
+        if(colors == null)
+        {
 
+
+            colors = GetComponent<ColorChanger>();
+
+        }
+        colors.incrementLevel();
         if(currentLevel % 5 == 0 && tileShakeTime > 4){
             tileShakeTime -= 1;
         }

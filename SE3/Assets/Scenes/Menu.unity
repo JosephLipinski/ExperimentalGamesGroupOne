@@ -604,7 +604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 54.7, y: 134}
+  m_AnchoredPosition: {x: 54.69995, y: 134}
   m_SizeDelta: {x: 192, y: 108}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1391017400
@@ -817,7 +817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 37.3, y: -54.7}
+  m_AnchoredPosition: {x: 37.30005, y: -54.7}
   m_SizeDelta: {x: 344.8, y: 344.8}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1748960332
@@ -861,6 +861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1816166058}
   - component: {fileID: 1816166057}
+  - component: {fileID: 1816166059}
   m_Layer: 0
   m_Name: LevelMan
   m_TagString: Untagged
@@ -880,6 +881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevel: 0
+  tileShakeTime: 0
 --- !u!4 &1816166058
 Transform:
   m_ObjectHideFlags: 0
@@ -893,6 +895,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816166059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1816166056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8244183c6f3df42b923a65db670a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flames:
+  - {fileID: 0}
+  - {fileID: 0}
+  wallMat: {fileID: 2100000, guid: f5fa0222ee2ab614883273ef39aa8bf7, type: 2}
+  level: 0
+  r: 0
+  g: 0
+  b: 0
 --- !u!1 &1820468387
 GameObject:
   m_ObjectHideFlags: 0
