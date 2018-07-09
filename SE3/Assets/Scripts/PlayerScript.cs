@@ -124,26 +124,29 @@ public class PlayerScript : MonoBehaviour
                 
             }
             else{
-                if (Input.GetKeyDown(KeyCode.W) && transform.position.z + .98f < 16.5f)
-                {
-                    transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.98f);
+                if(canMove){
+                    yield return new WaitForSeconds(1.0f);
+
+                    if (Input.GetKeyDown(KeyCode.W) && transform.position.z + .98f < 16.5f)
+                    {
+                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 0.98f);
+                    }
+                    else if (Input.GetKeyDown(KeyCode.A) && transform.position.x - .98f > -8.5f)
+                    {
+                        transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
+                    }
+                    else if (Input.GetKeyDown(KeyCode.S) && transform.position.z - .98f > 0f)
+                    {
+                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
+                    }
+                    else if (Input.GetKeyDown(KeyCode.D) && transform.position.x + .98f < 8f)
+                    {
+                        transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
+                    }
                 }
-                else if (Input.GetKeyDown(KeyCode.A) && transform.position.x - .98f > -8.5f)
-                {
-                    transform.position = new Vector3(transform.position.x - .98f, transform.position.y, transform.position.z);
-                }
-                else if (Input.GetKeyDown(KeyCode.S) && transform.position.z - .98f > 0f)
-                {
-                    transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .98f);
-                }
-                else if (Input.GetKeyDown(KeyCode.D) && transform.position.x + .98f < 8f)
-                {
-                    transform.position = new Vector3(transform.position.x + .98f, transform.position.y, transform.position.z);
-                }
+
 
                 level.showTiles(front);
-
-                coolTimer = cool;
             }
 
             if (!canSwap)
