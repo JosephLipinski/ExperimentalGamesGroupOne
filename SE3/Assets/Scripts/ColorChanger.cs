@@ -17,8 +17,8 @@ public class ColorChanger : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        DontDestroyOnLoad(gameObject);
-        incrementLevel();
+        //DontDestroyOnLoad(gameObject);
+       // incrementLevel();
 	}
 
     private void Update()
@@ -47,9 +47,10 @@ public class ColorChanger : MonoBehaviour {
 
         foreach(ParticleSystem p in flames)
         {
-
-            p.startColor = c;
-
+            if (p)
+            {
+                p.startColor = c;
+            }
 
         }
 

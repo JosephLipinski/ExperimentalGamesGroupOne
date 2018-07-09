@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour {
     {
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-        //upLevel();
+      //  upLevel();
     }
 	
 	// Update is called once per frame
@@ -49,7 +49,7 @@ public class LevelManager : MonoBehaviour {
         {
 
 
-            colors = GetComponent<ColorChanger>();
+            colors = GameObject.FindObjectOfType<ColorChanger>();
 
         }
         if (colors)
