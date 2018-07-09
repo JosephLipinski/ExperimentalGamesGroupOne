@@ -534,6 +534,21 @@ Prefab:
       propertyPath: jumpDelay
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 137556087537421040, guid: 41956bc07eeeb464383aa815724aa444,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4876af20a4041844b6616b9699a3033, type: 2}
+    - target: {fileID: 108210208273831610, guid: 41956bc07eeeb464383aa815724aa444,
+        type: 2}
+      propertyPath: m_SpotAngle
+      value: 43.65956
+      objectReference: {fileID: 0}
+    - target: {fileID: 108210208273831610, guid: 41956bc07eeeb464383aa815724aa444,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41956bc07eeeb464383aa815724aa444, type: 2}
   m_IsPrefabParent: 0
@@ -4420,7 +4435,7 @@ MonoBehaviour:
   player: {fileID: 466270304}
   dark: {fileID: 2100000, guid: ee2a0eb6a7dc42c4992c6235a6012a72, type: 2}
   none: {fileID: 2100000, guid: 92b9c028eda89ea4d906f83ac2ad984b, type: 2}
-  first: {fileID: 2100000, guid: f4876af20a4041844b6616b9699a3033, type: 2}
+  first: {fileID: 2100000, guid: b6c63e83514922040a851da061f01daa, type: 2}
   second: {fileID: 2100000, guid: 0a5e4d0d93465dc4da5f30d6dd77424b, type: 2}
   third: {fileID: 2100000, guid: 130b5e858a6079148aee4b5d6e54bb7c, type: 2}
   levelman: {fileID: 973057379}
