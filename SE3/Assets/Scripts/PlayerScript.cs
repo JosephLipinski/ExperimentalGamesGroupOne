@@ -210,6 +210,7 @@ public class PlayerScript : MonoBehaviour
     {
         transform.position = respawnLocation;
         atSpawn = true;
+        Debug.Log ("die");
     }
 
     private void OnTriggerEnter(Collider other)
